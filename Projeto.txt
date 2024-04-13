@@ -1,0 +1,38 @@
+Gerador de Certificados
+
+Páginas:
+
+1. Página principal:
+   - Botões: Criar, Editar, Criar/Editar Pastas, Imprimir, Exibir, Excluir e Lixeira.
+   - Lista de certificados gerados.
+
+2. Criar:
+   - Formulário para inserir informações do certificado.
+   - Botão para gerar o certificado.
+   - Botão voltar.
+
+3. Editar:
+   - Formulário preenchido com as informações do certificado selecionado.
+   - Botão para salvar alterações.
+   - Botão Voltar.
+
+4. Criar/Editar Pastas:
+   - Campos para inserir nome da pasta
+   - Lista de Pastas já criadas
+   - Botão Criar.
+   - Botão Excluir..
+   - Botão voltar.
+
+5. Exibir:
+   - Exibição do certificado selecionado para impressão.
+   - Botão voltar.
+
+6. Lixeira:
+   - Exibição de certificados excluídos.
+   - Botões para restaurar e excluir permanentemente certificados.
+   - Botão Voltar.
+
+Banco de Dados:
+
+- Banco de dados SQL para armazenar informações dos certificados, como nome, data, evento, etc.
+
