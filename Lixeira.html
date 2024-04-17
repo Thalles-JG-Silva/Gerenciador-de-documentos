@@ -9,16 +9,38 @@
 <body>
     <main class="container">
         <h1>Certificados Excluídos</h1>
-        <div class="certificados-list">
-            <!-- Exemplo de certificado excluído -->
-            <div class="certificado-item">
-                <h3>Título do Certificado</h3>
-                <p>Descrição do certificado. Horas: 20, Data: 2024-04-15, Participante: João Silva, CPF: 000.000.000-00</p>
-                <button type="button" class="btn-primary">Restaurar</button>
-                <button type="button" class="btn-secondary" onclick="voltar()">Voltar</button>
-                <button type="button" class="btn-secondary">Esvaziar Lixeira</button>
-            </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Selecionar</th>
+                    <th>Título</th>
+                    <th>Data</th>
+                    <th>Participante</th>
+                    <th>CPF</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Exemplo de linha de certificado excluído -->
+                <tr>
+                    <td><input type="checkbox" name="selectedCert" value="cert1"></td>
+                    <td>Título do Certificado</td>
+                    <td>2024-04-15</td>
+                    <td>João Silva</td>
+                    <td>000.000.000-00</td>
+                    <td>
+                        <button type="button" class="btn-primary">Restaurar</button>
+                        <button type="button" class="btn-secondary">Excluir Permanentemente</button>
+                    </td>
+                </tr>
+                <!-- Mais linhas podem ser adicionadas aqui -->
+            </tbody>
+        </table>
+        <div>
+            <button type="button" class="btn-primary" onclick="restaurarSelecionados()">Restaurar Selecionados</button>
+            <button type="button" class="btn-secondary" onclick="excluirPermanenteSelecionados()">Excluir Permanentemente Selecionados</button>
         </div>
+        <button type="button" class="btn-secondary" onclick="voltar()">Voltar</button>
     </main>
     <script src="Lixeira.js"></script>
 </body>
