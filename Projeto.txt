@@ -17,7 +17,7 @@ Páginas:
    - Botão Voltar.
 
 4. Criar/Editar Pastas:
-   - Campos para inserir nome da pasta
+   - Campo para inserir nome da pasta
    - Lista de Pastas já criadas
    - Botão Criar.
    - Botão Excluir..
