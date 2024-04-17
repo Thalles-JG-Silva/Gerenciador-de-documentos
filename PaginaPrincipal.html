@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestão de Certificados</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciador de Cerificados</title>
 </head>
+<link rel="stylesheet" href="PaginaPrincipal.css">
+<script defer src="PaginaPrincipal.js"> </script>
 <body>
-    <header>
-        <nav>
-            <a class="menu" href="/"> amanda code</a>
-            <div class="mobile-menu">
-            <div class="line1"> </div>
-            <div class="line2"> </div>
-            <div class="line3"> </div>
-            <div class="line4"> </div>
-            </div>
-            <ul class="nav-list">
-                <li> <a href="/"> Adicionar</a></li>
-                <li> <a href="/"> Criar </a></li>
-                <li> <a href="/"> Editar</a></li>
-                <li> <a href="/"> Imprimir</a></li>
-            </ul>
-        </nav>
-        
+  <header class="header">
+    <nav class="nav">
+    
+      <!--Logo-->
+      
+      <a class="logo" href="/">
+        <div class="logo-container">
+          <img src="icones/logo.png" alt="Logo">
+          <h1 class="logo-text">Gestão de Certificados</h1>
+        </div>
+      </a>
+
+      <!-- Menu Hamburguer -->
+      
+      <button class="menu-hamburguer"> </button>
+      <ul class="nav-list">
+          <li > <a href="/"> Inicio</a></li>
+          <li > <a href="/">Contato </a></li>
+          <li > <a href="/">Sobre </a></li>
+      </ul>
+    </nav>
     </header>
-    <main>
-
+    <main class="hero"> 
+    
+      <!-- Botão Criar -->
+    
+      <button class="criar-button">
+        <img src="icone/apagar.png" alt="icone-criar">
+        <span class="button-text">Criar</span>
+      </button>
     </main>
-
 </body>
 </html>
