@@ -44,6 +44,32 @@ a{
   padding-inline: 16px;
 
 }
+/* barra de pesquisa e */
+.certificado-text {
+  position: relative;
+  align-items: center;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.certificado-text h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #bdd3bd;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.textBuscar {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+.certificado-text img{
+  width: 30px;
+  height: 30px;
+}
+/* menu*/
 .nav{
   max-width: 1300px;
   height: 70px;
