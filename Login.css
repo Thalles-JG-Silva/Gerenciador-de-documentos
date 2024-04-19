@@ -147,7 +147,11 @@ body {
 .button__icon {
 	font-size: 24px;
 	margin-left: auto;
+<<<<<<< HEAD
 	color: #c5529f;
+=======
+	color: #7875B5;
+>>>>>>> 7df10dc9cc778727cde3d150a1c3a1e4dee2115a
 }
 
 .social-login {	
