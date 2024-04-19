@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilo.css">
+    <title>Criar/Editar Pastas</title>
+</head>
+<body>
+    <main class="container">
+        <h1>Criar e Editar Pastas</h1>
+        <form id="folderForm">
+            <div class="form-group">
+                <label for="folderName">Nome da Pasta:</label>
+                <input type="text" id="folderName" name="folderName" required>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn-primary">Criar</button>
+            </div>
+            <div class="form-group">
+                <label for="existingFolders">Pastas Existentes:</label>
+                <select id="existingFolders" name="existingFolders">
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn-secondary" onclick="editFolder()">Editar</button>
+                <button type="button" class="btn-secondary" onclick="deleteFolder()">Excluir</button>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn-secondary" onclick="voltar()">Voltar</button>
+            </div>
+        </form>
+    </main>
+    <script src="folderActions.js"></script>
+</body>
+</html>
