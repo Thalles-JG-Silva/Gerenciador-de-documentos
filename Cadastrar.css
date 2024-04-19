@@ -35,6 +35,17 @@ body{
     padding: 10px 20px;
 }
 
+.registration-form .btn-secondary{
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #d87171;
+    border: none;
+    color: white;
+    margin-top: 20px;
+}
+
 .registration-form .create-account{
     border-radius: 30px;
     padding: 10px 20px;
