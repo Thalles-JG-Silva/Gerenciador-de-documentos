@@ -1,40 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Define o conjunto de caracteres padrão como UTF-8 -->
     <meta charset="UTF-8">
+    <!-- Define o viewport para escalar corretamente o site em diferentes dispositivos -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Login.css">
-    <title>login</title>
+    <!-- Link para a folha de estilos externa, controlando a apresentação visual do login -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Define o título do documento, que aparece na aba do navegador -->
+    <title>Login</title>
 </head>
 <body>
+    <!-- Container principal para centralizar e conter a tela de login -->
     <div class="container">
+        <!-- Define a área visual principal da tela de login -->
         <div class="screen">
+            <!-- Conteúdo interativo da tela, como campos de entrada e botões -->
             <div class="screen__content">
+                <!-- Formulário de login -->
                 <form class="login">
+                    <!-- Campo de entrada para usuário/email -->
                     <div class="login__field">
+                        <!-- Ícone do usuário -->
                         <i class="login__icon fas fa-user"></i>
+                        <!-- Campo de texto para inserção do nome de usuário ou e-mail -->
                         <input type="text" class="login__input" placeholder="Usuario (a) / Email">
                     </div>
+                    <!-- Campo de entrada para senha -->
                     <div class="login__field">
+                        <!-- Ícone de cadeado para senha -->
                         <i class="login__icon fas fa-lock"></i>
+                        <!-- Campo de senha para inserção da senha -->
                         <input type="password" class="login__input" placeholder="Senha">
                     </div>
-                    <button class="button login__submit">
+                    <!-- Link que funciona como botão de envio para entrar na página principal -->
+                    <a href="PaginaPrincipal.html" class="button login__submit">
+                        <!-- Texto do botão -->
                         <span class="button__text">Entrar</span>
+                        <!-- Ícone de seta, indicando a ação de seguir em frente -->
                         <i class="button__icon fas fa-chevron-right"></i>
-                        <a href="PaginaPrincipal.html" class=""></a>
-                    </button>				
+                    </a>                    
                 </form>
+                <!-- Área para links de redes sociais ou registro -->
                 <div class="social-login">
-                    <h3>Cadastrar</h3>
-                    <div class="social-icons">
-                      
-                        <a href="Cadastrar.html" class="social-login__icon fab fa-facebook"></a>
-                    
-                    </div>
+                    <!-- Link para a página de cadastro -->
+                    <a href="Cadastrar.html" class="button cadastrar">
+                        <!-- Texto do botão de cadastro -->
+                        <span class="button__text">Cadastrar</span>
+                    </a>
                 </div>
             </div>
+            <!-- Plano de fundo com decoração estética composta por formas geométricas -->
             <div class="screen__background">
+                <!-- Formas decorativas no fundo -->
                 <span class="screen__background__shape screen__background__shape4"></span>
                 <span class="screen__background__shape screen__background__shape3"></span>		
                 <span class="screen__background__shape screen__background__shape2"></span>
