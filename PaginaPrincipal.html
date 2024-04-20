@@ -8,44 +8,60 @@
 <link rel="stylesheet" href="PaginaPrincipal.css">
 <script defer src="PaginaPrincipal.js"> </script>
 <body>
+
   <header class="header">
     <nav class="nav">
-    
-      <!--Logo-->
-      
-      <a class="logo" href="/">
+
+      <!-- Logo -->
         <div class="logo-container">
           <img src="icones/logo.png" alt="Logo">
-          <h1 class="logo-text">Gestão de Certificados</h1>
+          <h1 class="logo-text">Criador de Certificados</h1>
         </div>
-      </a>
+
 
       <!-- Menu Hamburguer -->
-      
       <button class="menu-hamburguer"> </button>
       <ul class="nav-list">
-          <li > <a href="/"> Inicio</a></li>
-          <li > <a href="/">Contato </a></li>
-          <li > <a href="/">Sobre </a></li>
+          <li > <a href="/PaginaPrincipal.html"> Inicio</a></li>
+          <li > <a href="/Sobre.html">Contato </a></li>
+          <li > <a href="/Sobre.html">Sobre </a></li>
+          <li > <a href="/Login.html">Log out </a></li>
       </ul>
     </nav>
     </header>
-    <div class="certificado-text">
-      <h2>Certificados</h2>
-      <div>
-        <input type="text" id="textBuscar" placeholder="Pesquisar">
-        <img src="icones/trash_9604388.png"  alt="Buscar"/>
-      </div>
-        <button class="delete-button">Lixeira</button>
-    </div>
+
     <main class="hero"> 
-    
+
+      <!-- MODO PESQUISAR -->
+     
+      <div class="Div-buscar">
+        <span class="text-certificado"> Certificados</span>
+        <!-- Botao pesquisar-->
+        <div id="divBusca">
+          <input type="text" id="txtBusca" placeholder="Buscar..."/>
+          <img src="icones/search-icon-png-9966.png" id="btnBusca" alt="Buscar"/>
+          
+        </div>
+        <!-- Botao lixeira-->
+          <button type="button" class="btnlixeira" onclick="openPage(Lixeira.html)">Lixeira </button>
+      </div>
+      
+
       <!-- Botão Criar -->
-    
-      <button class="criar-button">
-        <img src="icone/apagar.png" alt="icone-criar">
-        <span class="button-text">Criar</span>
-      </button>
+
+      <div class="form-group">                        
+       <button type="button" class="btncriar" onclick="openPage(CriarCertificado.html)">Criar</button>
+       <button type="button" class="btn-editar" onclick="openPage(EditarCertificado.html)">Editar</button>
+       <button type="button" class="btn-apagar" onclick="openPage(Lixeira.html)">Excluir</button>
+       <button type="button" class="btn-imprimir" onclick="openPage()">Imprimir</button>
+      </div>
+    </div>
+    <section>
+      <div class="lista">
+        <span> </span>
+      </div>
+    </section>
     </main>
 </body>
 </html>
+
