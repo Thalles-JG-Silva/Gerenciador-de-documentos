@@ -39,9 +39,120 @@
             </div>
         </nav>
     </div>
+     <!-- Tabela-->
+   <div class="container">
+    <div class="row">
+        <div class="col-md-offset-1 col-md-10">
+            <div class="panel">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col col-sm-3 col-xs-12">
+                            <h4 class="title">Certificados</h4>
+                        </div>
+                        <div class="col-sm-9 col-xs-12 text-right">
+                            <div class="btn_group">
+                                <!-- Campo de busca -->
+                                <input type="text" class="form-control" placeholder="Pesquisar">
+                                <!-- Botões de ação -->
+                                <button class="btn btn-default" title="criar certificado"><i class="fa fa-sync-alt"></i></button>
+                                <button class="btn btn-default" title="lixeira"><i class="fa fa-file-pdf"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Corpo da tabela -->
+                <div class="panel-body table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                
+                                <th>Título </th>
+                                <th>Data </th>
+                                <th>Participante</th>
+                                <th>CPF</th>
+                                <th> </th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Linhas de dados -->
+                            <tr>
+                            
+                                <td>Teste.pdf</td>
+                                <td>2024-07-20</td>
+                                 <td>Larissa Gonçalves</td>
+                                <td>234.567.890-12</td>
+                                <td>
+                                    
+                                    <ul class="action-list">
+                                        <li><a href="#" data-tip="editar"><i class="fa fa-edit"></i></a></li>
+                                        <li><a href="#" data-tip="excluir"><i class="fas fa-times"></i></a></li>
+                                        <li><a href="#" data-tip="imprimir"><i class="fas fa-print"></i></a></li>
+                                        <li><a href="#" data-tip="exibir"><i class="fas fa-eye"></i></a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Curso de Desenvolvimento Web</td>
+                                <td>2024-09-08</td>
+                                <td>Carla Magno</td>
+                                <td>265.678.934-23</td>
 
-    <!-- Restante do seu HTML continua aqui... -->
+                                <td>
+                                    <ul class="action-list">
+                                        <li><a href="#" data-tip="editar"><i class="fa fa-edit"></i></a></li>
+                                        <li><a href="#" data-tip="excluir"><i class="fas fa-times"></i></a></li>
+                                        <li><a href="#" data-tip="imprimir"><i class="fas fa-print"></i></a></li>
+                                        <li><a href="#" data-tip="exibir"><i class="fas fa-eye"></i></a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                            
+                                <td>Curso de Agronomia.pdf</td>
+                                <td>2024-07-20</td>
+                                 <td>Laura Alves</td>
+                                <td>112.544.890-44</td>
+                                <td>
+                                    
+                                    <ul class="action-list">
+                                        <li><a href="/EditarCertificado.html" data-tip="editar"><i class="fa fa-edit"></i></a></li>
+                                        <li><a href="/Lixeira.html" data-tip="excluir"><i class="fas fa-times"></i></a></li>
+                                        <li><a href="/" data-tip="imprimir"><i class="fas fa-print"></i></a></li>
+                                        <li><a href="#" data-tip="exibir"><i class="fas fa-eye"></i></a></li>
+                                    </ul>
+                                </td>
+                            </tr>
 
+                    
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Rodapé da tabela -->
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col col-sm-6 col-xs-6">mostrando <b>5</b> de <b>25</b> entradas</div>
+                        <div class="col-sm-6 col-xs-6">
+                            <!-- Paginação -->
+                            <ul class="pagination hidden-xs pull-right">
+                                <li><a href="#"> <</a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <!-- Adicione mais páginas conforme necessário -->
+                                <li><a href="#">></a></li>
+                            </ul>
+                            <!-- Paginação para dispositivos móveis -->
+                            <ul class="pagination visible-xs pull-right">
+                                <li><a href="#"> < </a></li>
+                                <li><a href="#"> > </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+   
     <!-- JavaScripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
