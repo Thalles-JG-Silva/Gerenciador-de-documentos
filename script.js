@@ -27,3 +27,16 @@ function toggleAll(source) {
         checkboxes[i].checked = source.checked;
     }
 }
+
+function imprimirPDF(url) {
+    var iframe = document.getElementById('pdfIframe');
+    iframe.src = url;
+
+    iframe.onload = function() {
+        try {
+            iframe.contentWindow.print();
+        } catch (e) {
+            console.error("Erro ao imprimir o PDF: " + e.message);
+        }
+    };
+}

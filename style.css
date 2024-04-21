@@ -11,21 +11,6 @@ body {
 	background: linear-gradient(90deg, #C7C5F4, #776BCC);
 }
 
-#searchInput {
-    padding: 10px;
-    width: 100%; /* Adaptável à largura do container */
-    max-width: 500px; /* Limita a largura máxima para não ficar muito grande em telas grandes */
-    border-radius: 20px;
-    border: 2px solid #CCC;
-    outline: none; /* Remove o contorno ao focar */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona um leve sombreamento para destacar */
-}
-
-#searchInput:focus {
-    border-color: #776BCC; /* Muda a cor da borda ao focar */
-}
-
-
 .container {
 	display: flex;
 	align-items: center;
@@ -310,3 +295,15 @@ body {
     border-top: 1px solid #dee9ff;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
 }
+
+/* Aumentar a fonte dos links na barra de navegação */
+.nav-link {
+    font-size: 25px; /* Escolha o tamanho que preferir */
+    font-weight: bold; /* Opcional: torna o texto mais grosso */
+}
+
+/* Personalizar a cor de fundo da barra de navegação */
+.navbar-custom {
+    background-color: #4b6fff; /* Substitua pelo código hexadecimal da sua cor */
+}
+
