@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,51 +9,100 @@
     <link rel="stylesheet" href="style.css">
     <title>Lixeira</title>
 </head>
+
 <body style="background: linear-gradient(90deg, #C7C5F4, #776BCC);">
-    <main class="registration-form" style="padding: 50px 0; max-width: 800px; margin: auto;">
-        <h1 class="text-center" style="color: white;">Certificados Excluídos</h1>
-        <table class="table table-hover" style="background-color: #fff; border-radius: 20px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.075);">
-            <thead>
-                <tr>
-                    <th scope="col">Selecionar</th>
-                    <th scope="col">Título</th>
-                    <th scope="col">Data</th>
-                    <th scope="col">Participante</th>
-                    <th scope="col">CPF</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Exemplo de linha de certificado excluído -->
-                <tr>
-                    <td><input type="checkbox" name="selectedCert" value="cert1"></td>
-                    <td>Palestra de Tecnologia</td>
-                    <td>2024-04-15</td>
-                    <td>João Silva</td>
-                    <td>378.123.876-96</td>
-                </tr>
-                <!-- Mais linhas podem ser adicionadas aqui -->
-                <tr>
-                    <td><input type="checkbox" name="selectedCert" value="cert2"></td>
-                    <td>Mini Curso Arduino</td>
-                    <td>2024-04-18</td>
-                    <td>Maria Fernanda</td>
-                    <td>123.456.789-01</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" name="selectedCert" value="cert3"></td>
-                    <td>Seminário de Tecnologia</td>
-                    <td>2024-04-20</td>
-                    <td>Carlos Eduardo</td>
-                    <td>234.567.890-12</td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="text-center" style="margin-top: 20px;">
-            <button type="button" class="btn btn-verde" onclick="restaurarSelecionados()">Restaurar</button>
-            <button type="button" class="btn btn-roxo" onclick="window.location='PaginaPrincipal.html';">Voltar</button>
-            <button type="button" class="btn btn-secondary" onclick="excluirPermanenteSelecionados()">Excluir Permanentemente</button>            
+    <main class="registration-form py-5 mx-auto" style="max-width: 800px;">
+        <h1 class="text-center text-white">Certificados Excluídos</h1>
+        <div class="table-responsive">
+            <table class="table table-hover"
+                style="background-color: #fff; border-radius: 20px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.075);">
+                <thead>
+                    <div class="search-bar" style="text-align: center; margin-bottom: 20px;">
+                        <input type="text" id="searchInput" onkeyup="searchCertificates()"
+                            placeholder="Pesquisar certificados..."
+                            style="padding: 10px; width: 90%; max-width: 500px; border-radius: 20px; border: 2px solid #CCC;">
+                    </div>
+                    <th scope="col">
+                        <input type="checkbox" id="selectAll" onclick="toggleAll(this)">
+                        <th scope="col">Selecionar Todos</th>
+                <tbody>
+
+                    <tr>
+                        <th scope="col">Selecionar</th>
+                        <th scope="col">Título</th>
+                        <th scope="col">Data</th>
+                        <th scope="col">Participante</th>
+                        <th scope="col">CPF</th>
+                    </tr>
+                    </thead>
+                    <!-- Linhas de certificado excluído -->
+                    <tr>
+                        <td><input type="checkbox" name="selectedCert" value="cert1"></td>
+                        <td>Palestra de Tecnologia</td>
+                        <td>2024-04-15</td>
+                        <td>João Silva</td>
+                        <td>378.123.876-96</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="selectedCert" value="cert2"></td>
+                        <td>Workshop de Machine Learning</td>
+                        <td>2024-05-01</td>
+                        <td>Beatriz Almeida</td>
+                        <td>489.123.456-78</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="selectedCert" value="cert3"></td>
+                        <td>Conferência de Design UX</td>
+                        <td>2024-06-12</td>
+                        <td>Rafael Costa</td>
+                        <td>567.890.123-45</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="selectedCert" value="cert4"></td>
+                        <td>Simpósio de Sustentabilidade</td>
+                        <td>2024-07-20</td>
+                        <td>Larissa Gonçalves</td>
+                        <td>234.567.890-12</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="selectedCert" value="cert5"></td>
+                        <td>Curso de Desenvolvimento Web</td>
+                        <td>2024-08-05</td>
+                        <td>Carlos Magno</td>
+                        <td>345.678.901-23</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="selectedCert" value="cert6"></td>
+                        <td>Fórum de Inovação Tecnológica</td>
+                        <td>2024-09-15</td>
+                        <td>Juliana Martins</td>
+                        <td>456.789.012-34</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="selectedCert" value="cert7"></td>
+                        <td>Debate sobre Educação a Distância</td>
+                        <td>2024-10-22</td>
+                        <td>Marcos Oliveira</td>
+                        <td>567.890.123-45</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="selectedCert" value="cert8"></td>
+                        <td>Exposição de Arte Digital</td>
+                        <td>2024-11-03</td>
+                        <td>Sofia Castro</td>
+                        <td>678.901.234-56</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="text-center mt-4">
+            <button type="button" class="btn btn-verde">Restaurar</button>
+            <button type="button" class="btn btn-roxo">Voltar</button>
+            <button type="button" class="btn btn-secondary">Excluir Permanentemente</button>
         </div>
     </main>
-    <script src="Lixeira.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
