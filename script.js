@@ -17,3 +17,13 @@ function searchCertificates() {
         }       
     }
 }
+
+function toggleAll(source) {
+    // Seleciona todos os checkboxes com o nome 'selectedCert' na página
+    var checkboxes = document.querySelectorAll('input[type="checkbox"][name="selectedCert"]');
+    
+    // Itera sobre todos os checkboxes e ajusta o estado de 'checked' de acordo com o checkbox 'source'
+    for (var i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].checked = source.checked;
+    }
+}
