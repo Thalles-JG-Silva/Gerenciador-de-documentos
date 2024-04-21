@@ -10,9 +10,6 @@
   --print: rgb(0, 0, 0);
   --nav-toggle-duration: 500ms;
 }
-.body{
-  background: ;
-}
 
 .rotate-180-deg {
   transform: rotate(180deg);
@@ -117,6 +114,7 @@ li.sub-li {
 body {
   margin-top: 52px;
   padding-bottom: 52px;
+  background: linear-gradient(90deg, #C7C5F4, #776BCC);
 }
 
 #wrapper, #page-wrapper {
