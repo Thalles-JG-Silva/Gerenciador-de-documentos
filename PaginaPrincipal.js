@@ -1,112 +1,159 @@
+$(document).ready(function(){
+    // Esta função é executada quando o DOM está pronto para ser manipulado
 
-        $(document).ready(function(){
-            // Função para ativar os itens do menu
-            $('ul.nav > li').on('click', function(evt) {
-                if (!$(this).hasClass('toggle-nav')) {
-                    $(this).addClass('active').siblings().removeClass('active');
+    // Função para ativar os itens do menu quando clicados
+    $('ul.nav > li').on('click', function(evt) {
+        // Quando um item de menu é clicado, esta função é acionada
+
+        // Verifica se o item clicado não possui a classe 'toggle-nav'
+        if (!$(this).hasClass('toggle-nav')) {
+            // Adiciona a classe 'active' ao item clicado e remove a classe 'active' dos seus irmãos
+            $(this).addClass('active').siblings().removeClass('active');
+        }
+    });
+
+    // Função para adicionar o botão de alternar na barra de navegação
+    $('li.toggle-nav').on('click', function() {
+        // Quando o botão de alternar é clicado, esta função é acionada
+
+        // Alterna a classe 'rotate-180-deg' no ícone do botão de alternar
+        $(this).find('i').toggleClass('rotate-180-deg');
+
+        // Alterna a classe 'hide-link-text' no elemento de navegação lateral
+        $('.navbar-nav.side-nav').toggleClass('hide-link-text');
+
+        // Alterna a classe 'expanded' no elemento com o id 'wrapper'
+        $('#wrapper').toggleClass('expanded');
+    });
+
+    // Função para corrigir o menu ao clicar no botão de hambúrguer
+    $('.navbar-toggle').on('click', function() {
+        // Quando o botão de hambúrguer é clicado, esta função é acionada
+
+        // Remove a classe 'hide-link-text' do elemento de navegação lateral
+        $('.navbar-nav.side-nav').removeClass('hide-link-text');
+
+        // Remove a classe 'expanded' do elemento com o id 'wrapper'
+        $('#wrapper').removeClass('expanded');
+
+        // Remove a classe 'rotate-180-deg' do ícone do botão de alternar
+        $('i.fa-arrow-left').removeClass('rotate-180-deg');
+    });
+
+    // Função para filtrar a tabela com a barra de pesquisa
+    $('#searchBox').on('keyup', function() {
+        // Quando uma tecla é pressionada no campo de pesquisa, esta função é acionada
+
+        // Obtém o valor digitado no campo de pesquisa e converte para maiúsculas
+        var input, filter, table, tr, td, i, txtValue;
+        input = this;
+        filter = input.value.toUpperCase();
+
+        // Obtém a tabela e suas linhas
+        table = document.getElementById("fileList");
+        tr = table.getElementsByTagName("tr");
+
+        // Itera sobre todas as linhas da tabela
+        for (i = 0; i < tr.length; i++) {
+            // Obtém a célula correspondente à segunda coluna da linha
+            td = tr[i].getElementsByTagName("td")[1];
+
+            if (td) {
+                // Obtém o texto da célula e converte para maiúsculas
+                txtValue = td.textContent || td.innerText;
+
+                // Verifica se o texto da célula contém o texto filtrado
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    // Exibe a linha se o texto filtrado for encontrado
+                    tr[i].style.display = "";
+                } else {
+                    // Oculta a linha se o texto filtrado não for encontrado
+                    tr[i].style.display = "none";
                 }
-            });
-
-            // Função para adicionar o botão de alternar
-            $('li.toggle-nav').on('click', function() {
-                $(this).find('i').toggleClass('rotate-180-deg');
-                $('.navbar-nav.side-nav').toggleClass('hide-link-text');
-                $('#wrapper').toggleClass('expanded');
-            });
-
-            // Função para corrigir o menu ao clicar no botão de hambúrguer
-            $('.navbar-toggle').on('click', function() {
-                $('.navbar-nav.side-nav').removeClass('hide-link-text');
-                $('#wrapper').removeClass('expanded');
-                $('i.fa-arrow-left').removeClass('rotate-180-deg');
-            });
-
-            // Função para filtrar a tabela com a barra de pesquisa
-            $('#searchBox').on('keyup', function() {
-                var input, filter, table, tr, td, i, txtValue;
-                input = this;
-                filter = input.value.toUpperCase();
-                table = document.getElementById("fileList");
-                tr = table.getElementsByTagName("tr");
-                for (i = 0; i < tr.length; i++) {
-                    td = tr[i].getElementsByTagName("td")[1];
-                    if (td) {
-                        txtValue = td.textContent || td.innerText;
-                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                            tr[i].style.display = "";
-                        } else {
-                            tr[i].style.display = "none";
-                        }
-                    }
-                }
-            });
-        });
-/* Abre as paginas dos botoes */
+            }
+        }
+    });
+});
+/* Abre as páginas dos botões */
 function openpage(pageUrl) {
+    // Esta função é chamada quando um botão é clicado para abrir uma página
+
+    // Abre a página especificada no mesmo contexto de navegação
     window.open(pageUrl, '_self');
 }
-// botao Excluir// 
+
+/* Função para excluir um certificado */
 function excluirCertificado(event) {
-    // Confirmar se o usuário realmente deseja excluir o certificado
+    // Esta função é chamada quando o usuário clica no botão de exclusão de um certificado
+
+    // Exibe uma caixa de diálogo de confirmação
     if (confirm("Tem certeza de que deseja excluir este certificado?")) {
-        // Obter a referência ao elemento pai do ícone de exclusão (que é a célula da tabela)
+        // Obtém a referência à célula da tabela que contém o botão de exclusão
         var tableCell = event.target.closest("td");
         
-        // Obter a referência à linha (tr) que contém o certificado a ser excluído
+        // Obtém a referência à linha da tabela que contém o certificado a ser excluído
         var tableRow = tableCell.closest("tr");
         
-        // Remover a linha (tr) da tabela
+        // Remove a linha da tabela
         tableRow.remove();
         
-        // Exibir uma mensagem de confirmação
+        // Exibe uma mensagem de confirmação
         alert("Certificado excluído com sucesso!");
     }
 }
-// imprimir//
+
+/* Função para imprimir um PDF */
 function imprimirPDF(pdfFileName) {
-    // Criar um elemento iframe
+    // Esta função é chamada quando o usuário clica no botão para imprimir um PDF
+
+    // Cria um elemento iframe para carregar o PDF
     var iframe = document.createElement('iframe');
     
-    // Definir o atributo src do iframe como o nome do arquivo PDF
+    // Define o atributo src do iframe como o nome do arquivo PDF
     iframe.src = pdfFileName;
     
-    // Definir o estilo do iframe para não ser exibido na página
+    // Define o estilo do iframe para não ser exibido na página
     iframe.style.display = 'none';
     
-    // Adicionar o iframe ao corpo do documento
+    // Adiciona o iframe ao corpo do documento
     document.body.appendChild(iframe);
     
-    // Esperar um curto período de tempo para o PDF carregar
+    // Espera um curto período de tempo para o PDF carregar
     setTimeout(function() {
-        // Chamar a função de impressão do iframe
+        // Chama a função de impressão do iframe
         iframe.contentWindow.print();
     }, 1000);
 }
 
-/*Pesquisa */
+/* Função para pesquisar certificados */
 function searchCertificates() {
-    // Pegar o valor digitado na barra de pesquisa
+    // Esta função é chamada quando o usuário digita algo na barra de pesquisa e pressiona Enter
+
+    // Obtém o valor digitado na barra de pesquisa
     var input = document.getElementById("searchInput");
     var filter = input.value.toUpperCase();
 
-    // Pegar a tabela e as linhas da tabela
+    // Obtém a tabela e as linhas da tabela
     var table = document.querySelector(".panel-body table");
     var rows = table.getElementsByTagName("tr");
 
-    // Loop através de todas as linhas da tabela e ocultar aquelas que não correspondem à pesquisa
+    // Itera sobre todas as linhas da tabela
     for (var i = 0; i < rows.length; i++) {
         var cells = rows[i].getElementsByTagName("td");
         var found = false;
+        // Itera sobre todas as células da linha
         for (var j = 0; j < cells.length && !found; j++) {
             var cell = cells[j];
-            if (cell && cell.textContent) { // Verifica se a célula e seu conteúdo não são nulos
+            if (cell && cell.textContent) {
+                // Obtém o texto da célula e converte para maiúsculas
                 var textValue = cell.textContent.toUpperCase();
+                // Verifica se o texto da célula contém o texto filtrado
                 if (textValue.indexOf(filter) > -1) {
                     found = true;
                 }
             }
         }
-        // Exibir ou ocultar a linha da tabela com base no resultado da pesquisa
+        // Exibe ou oculta a linha da tabela com base no resultado da pesquisa
         if (found) {
             rows[i].style.display = "";
         } else {
@@ -114,4 +161,3 @@ function searchCertificates() {
         }
     }
 }
-
