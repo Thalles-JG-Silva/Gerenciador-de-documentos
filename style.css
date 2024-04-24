@@ -11,6 +11,52 @@ body {
 	background: linear-gradient(90deg, #C7C5F4, #776BCC);
 }
 
+/* Estilização básica para as tabelas com hover */
+.table-hover {
+    background-color: #fff; /* Cor de fundo */
+    border-radius: 20px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+    margin-top: 20px; /* Espaço acima da tabela */
+    width: 100%; /* Ajusta a largura para ocupar todo o espaço disponível */
+    overflow: hidden; /* Oculta qualquer conteúdo que exceda as bordas arredondadas */
+}
+
+/* Estilização para a barra de pesquisa acima da tabela */
+.search-bar input[type="text"] {
+    padding: 10px; /* Padding confortável para digitação */
+    width: 90%; /* Largura relativa para responsividade */
+    max-width: 500px; /* Largura máxima */
+    border: 2px solid #CCC; /* Borda sólida e sutil */
+    border-radius: 20px; /* Bordas arredondadas para o campo de texto */
+    display: block; /* Assegura que o input é um bloco */
+    margin: 20px auto; /* Centraliza e adiciona espaço verticalmente */
+    font-size: 16px; /* Tamanho de fonte legível */
+}
+
+/* Estilo para os cabeçalhos de tabela */
+.table th {
+    cursor: pointer; /* Indica que o cabeçalho é interativo */
+    background-color: #EFEFEF; /* Cor de fundo sutil para cabeçalhos */
+    padding: 12px 15px; /* Padding generoso para um visual agradável */
+}
+
+/* Estilo para as células da tabela */
+.table td {
+    padding: 12px 15px; /* Padding uniforme */
+    border-bottom: 1px solid #DDD; /* Borda sutil para separar linhas */
+}
+
+/* Realce de linhas ao passar o mouse */
+.table-hover tbody tr:hover {
+    background-color: #f8f8f8; /* Cor de fundo mais clara ao passar o mouse */
+}
+
+/* Estilo para o checkbox de seleção geral */
+#selectAll {
+    margin-right: 10px; /* Espaço entre o checkbox e o texto */
+    cursor: pointer; /* Indica interatividade */
+}
+
 .container {
 	display: flex;
 	align-items: center;
@@ -228,7 +274,7 @@ body {
     padding: 10px 20px;
 }
 
-.registration-form .btn-secondary{
+.registration-form .btn-vermelho{
     border-radius: 30px;
     padding: 10px 20px;
     font-size: 18px;

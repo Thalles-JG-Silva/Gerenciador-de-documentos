@@ -1,58 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Define o conjunto de caracteres padrão como UTF-8 -->
     <meta charset="UTF-8">
-    <!-- Define o viewport para escalar corretamente o site em diferentes dispositivos -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link para a folha de estilos externa, controlando a apresentação visual do login -->
     <link rel="stylesheet" href="style.css">
-    <!-- Define o título do documento, que aparece na aba do navegador -->
     <title>Login</title>
 </head>
 <body>
-    <!-- Container principal para centralizar e conter a tela de login -->
+    <!-- Container para centralizar a tela de login -->
     <div class="container">
-        <!-- Define a área visual principal da tela de login -->
         <div class="screen">
-            <!-- Conteúdo interativo da tela, como campos de entrada e botões -->
+            <!-- Conteúdo do login incluindo campos de entrada e botões -->
             <div class="screen__content">
-                <!-- Formulário de login -->
                 <form class="login">
-                    <!-- Campo de entrada para usuário/email -->
+                    <!-- Campo de usuário/email -->
                     <div class="login__field">
-                        <!-- Ícone do usuário -->
                         <i class="login__icon fas fa-user"></i>
-                        <!-- Campo de texto para inserção do nome de usuário ou e-mail -->
-                        <input type="text" class="login__input" placeholder="Usuario (a) / Email">
+                        <input type="text" class="login__input" placeholder="Usuario(a) / Email">
                     </div>
-                    <!-- Campo de entrada para senha -->
+                    <!-- Campo de senha -->
                     <div class="login__field">
-                        <!-- Ícone de cadeado para senha -->
                         <i class="login__icon fas fa-lock"></i>
-                        <!-- Campo de senha para inserção da senha -->
                         <input type="password" class="login__input" placeholder="Senha">
                     </div>
-                    <!-- Link que funciona como botão de envio para entrar na página principal -->
-                    <a href="PaginaPrincipal.html" class="button login__submit">
-                        <!-- Texto do botão -->
+                    <!-- Botão de entrar utilizando tag <button> -->
+                    <button type="submit" formaction="PaginaPrincipal.html" class="button login__submit">
                         <span class="button__text">Entrar</span>
-                        <!-- Ícone de seta, indicando a ação de seguir em frente -->
                         <i class="button__icon fas fa-chevron-right"></i>
-                    </a>                    
+                    </button>
                 </form>
-                <!-- Área para links de redes sociais ou registro -->
+                <!-- Área para registro -->
                 <div class="social-login">
-                    <!-- Link para a página de cadastro -->
-                    <a href="Cadastrar.html" class="button cadastrar">
-                        <!-- Texto do botão de cadastro -->
+                    <!-- Botão de cadastro utilizando tag <button> -->
+                    <button type="button" onclick="window.location.href='Cadastrar.html'" class="button cadastrar">
                         <span class="button__text">Cadastrar</span>
-                    </a>
+                    </button>
                 </div>
             </div>
-            <!-- Plano de fundo com decoração estética composta por formas geométricas -->
+            <!-- Plano de fundo decorativo -->
             <div class="screen__background">
-                <!-- Formas decorativas no fundo -->
                 <span class="screen__background__shape screen__background__shape4"></span>
                 <span class="screen__background__shape screen__background__shape3"></span>		
                 <span class="screen__background__shape screen__background__shape2"></span>
