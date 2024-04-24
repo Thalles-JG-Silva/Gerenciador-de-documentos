@@ -1,165 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificado</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="PaginaPrincipal.css">
-   
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Página Principal</title>
 </head>
-<body>
-    <div id="wrapper">
-        <!-- Barra de navegação -->
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="navbar-header">
-                <!-- Botão para alternar a exibição do menu em telas pequenas -->
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-hamburger-delicious">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"> </span>
-                    <span class="icon-bar"> </span>
-                    <span class="icon-bar"> </span>
-                </button>
-                <!-- Marca da barra de navegação -->
-                
-                <a class="navbar-brand">Criador de Certificados</a> 
-            </div>
 
-            <div class="collapse navbar-collapse navbar-hamburger-delicious">
-                <!-- Lista de itens do menu -->
-                <ul class="nav navbar-nav side-nav">
-                    <li class="toggle-nav visible-lg visible-md visible-sm"><a><i class="fa fa-lg fa-arrow-left"></i>Esconder Menu</a></li>
-                    <li class="divider"><hr></li>
-                    <li class="Home"><a href="PaginaPrincipal.html"><i class="fa fa-home"></i>Home</a></li>
-                    <li class="contato"><a href="Sobre.html"><i class="fa fa-lg fa-phone-square"></i>Contato</a></li>
-                    <li class="sobre"><a href="Sobre.html"><i class="fa fa-lg fa-question-circle"></i>Sobre Nós</a></li>
-                    <li class="divider"><hr></li>
-                    <li class="logout"><a href="Login.html"><i class="fa fa-sign-out-alt"></i>Log Out</a></li>
+<body style="background: linear-gradient(90deg, #C7C5F4, #776BCC);">
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-sm navbar-dark navbar-custom">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="icones/logo.png" alt="" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="CriarCertificado.html">Criar</a>
+                    </li>                  
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="Lixeira.html">Lixeira</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Login.html">Sair</a>
+                    </li>
                 </ul>
             </div>
-        </nav>
-    </div>
-     <!-- Tabela-->
-   <div class="container">
-    <div class="row">
-        <div class="col-md-offset-1 col-md-10">
-            <div class="panel">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col col-sm-3 col-xs-12">
-                            <h4 class="title">Certificados</h4>
-                        </div>
-                        <div class="col-sm-9 col-xs-12 text-right">
-                            <div class="btn_group">
-                                <!-- Campo de busca -->
-                                <input type="text" class="form-control" id="searchInput" onkeyup="searchCertificates()" placeholder="Pesquisar">
-
-                                <!-- Botões de ação -->
-                                <button class="btn btn-default" title="criar certificado" onclick="openpage('CriarCertificado.html')"> <i class="fas fa-plus"></i></button>
-                                <button class="btn btn-default" title="lixeira" onclick="openpage('Lixeira.html')"><i class="fa fa-trash"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Corpo da tabela -->
-                <div class="panel-body table-responsive">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                
-                                <th>Título </th>
-                                <th>Data </th>
-                                <th>Participante</th>
-                                <th>CPF</th>
-                                <th> </th>
-                               
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!-- Linhas de dados -->
-                            <tr>
-                            
-                                <td>Teste.pdf</td>
-                                <td>2024-07-20</td>
-                                 <td>Larissa Gonçalves</td>
-                                <td>234.567.890-12</td>
-                                <td>
-                                    
-                                    <ul class="action-list">
-                                        
-                                        <li><a href="/EditarCertificado.html" data-tip="editar"><i class="fa fa-edit"></i></a></li>
-                                        <li><a href="#sobre" data-tip="excluir" onclick="excluirCertificado()"><i class="fas fa-times"></i></a></li>
-                                        <li><a href="#" data-tip="imprimir" onclick="imprimirPDF('Certificado Teste.pdf')"> <i class="fas fa-print"></i></a></li>
-                                        <li><a href="/Certificado Teste.pdf" data-tip="exibir"><i class="fas fa-eye"></i></a></li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Curso de Desenvolvimento Web</td>
-                                <td>2024-09-08</td>
-                                <td>Carla Magno</td>
-                                <td>265.678.934-23</td>
-
-                                <td>
-                                    <ul class="action-list">
-                                        <li><a href="/EditarCertificado.html" data-tip="editar"><i class="fa fa-edit"></i></a></li>
-                                        <li><a href="#" data-tip="excluir" onclick="excluirCertificado()"><i class="fas fa-times"></i></a></li>
-                                        <li><a href="#" data-tip="imprimir" onclick="imprimirPDF('Certificado Teste.pdf')"> <i class="fas fa-print"></i></a></li>
-                                        <li><a href="/Certificado Teste.pdf" data-tip="exibir"><i class="fas fa-eye"></i></a></li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                            
-                                <td>Curso de Agronomia.pdf</td>
-                                <td>2024-07-20</td>
-                                 <td>Laura Alves</td>
-                                <td>112.544.890-44</td>
-                                <td>
-                                    
-                                    <ul class="action-list">
-                                        <li><a href="/EditarCertificado.html" data-tip="editar"><i class="fa fa-edit"></i></a></li>
-                                        <li><a href="#" data-tip="excluir" onclick="excluirCertificado()"><i class="fas fa-times"></i></a></li>
-                                        <li><a href="#" data-tip="imprimir" onclick="imprimirPDF('Certificado Teste.pdf')"> <i class="fas fa-print"></i></a></li>
-                                        <li><a href="/Certificado Teste.pdf" data-tip="exibir"><i class="fas fa-eye"></i></a></li>
-                                    </ul>
-                                </td>
-                            </tr>
-
-                    
-                        </tbody>
-                    </table>
-                </div>
-                <!-- Rodapé da tabela -->
-                <div class="panel-footer">
-                    <div class="row">
-                        <div class="col col-sm-6 col-xs-6">mostrando <b>1</b> de <b>25</b> entradas</div>
-                        <div class="col-sm-6 col-xs-6">
-                            <!-- Paginação -->
-                            <ul class="pagination hidden-xs pull-right">
-                                <li><a href="#"> < </a></li>
-                                <li class="active"><a href="#">1</a></li>
-                                <!-- Adicione mais páginas conforme necessário -->
-                                <li><a href="#">></a></li>
-                            </ul>
-                            <!-- Paginação para dispositivos móveis -->
-                            <ul class="pagination visible-xs pull-right">
-                                <li><a href="#"> < </a></li>
-                                <li><a href="#"> > </a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>
-</div>
-   
-    <!-- JavaScripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script  src="PaginaPrincipal.js"></script>
-    
+    </nav>
+
+    <main class="registration-form py-5 mx-auto" style="max-width: 800px;">
+        <h1 class="text-center text-white">Certificados Gerados</h1>
+        <div class="table-responsive">
+            <table class="table table-hover"
+                style="background-color: #fff; border-radius: 20px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.075);">
+                <thead>
+                    <div class="search-bar" style="text-align: center; margin-bottom: 20px;">
+                        <input type="text" id="searchInput" onkeyup="searchCertificates()"
+                            placeholder="Pesquisar certificados..."
+                            style="padding: 10px; width: 90%; max-width: 500px; border-radius: 20px; border: 2px solid #CCC;">
+                    </div>
+                    <th scope="col">
+                        <input type="checkbox" id="selectAll" onclick="toggleAll(this)">
+                    <th scope="col">Selecionar Todos</th>
+                    </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="col">Selecionar</th>
+                        <th scope="col">Título</th>
+                        <th scope="col">Data</th>
+                        <th scope="col">Participante</th>
+                        <th scope="col">CPF</th>
+                    </tr>
+                    </thead>
+                    <!-- Linhas de certificado excluído -->
+                    <tr>
+                        <td><input type="checkbox" name="selectedCert" value="cert1"></td>
+                        <td>Palestra de Tecnologia</td>
+                        <td>2024-04-15</td>
+                        <td>João Silva</td>
+                        <td>378.123.876-96</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="selectedCert" value="cert2"></td>
+                        <td>Workshop de Machine Learning</td>
+                        <td>2024-05-01</td>
+                        <td>Beatriz Almeida</td>
+                        <td>489.123.456-78</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="selectedCert" value="cert3"></td>
+                        <td>Conferência de Design UX</td>
+                        <td>2024-06-12</td>
+                        <td>Rafael Costa</td>
+                        <td>567.890.123-45</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="selectedCert" value="cert4"></td>
+                        <td>Simpósio de Sustentabilidade</td>
+                        <td>2024-07-20</td>
+                        <td>Larissa Gonçalves</td>
+                        <td>234.567.890-12</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="selectedCert" value="cert5"></td>
+                        <td>Curso de Desenvolvimento Web</td>
+                        <td>2024-08-05</td>
+                        <td>Carlos Magno</td>
+                        <td>345.678.901-23</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="selectedCert" value="cert6"></td>
+                        <td>Fórum de Inovação Tecnológica</td>
+                        <td>2024-09-15</td>
+                        <td>Juliana Martins</td>
+                        <td>456.789.012-34</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="selectedCert" value="cert7"></td>
+                        <td>Debate sobre Educação a Distância</td>
+                        <td>2024-10-22</td>
+                        <td>Marcos Oliveira</td>
+                        <td>567.890.123-45</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="selectedCert" value="cert8"></td>
+                        <td>Exposição de Arte Digital</td>
+                        <td>2024-11-03</td>
+                        <td>Sofia Castro</td>
+                        <td>678.901.234-56</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <button type="button" onclick="imprimirPDF('Certificado Teste.pdf')"
+            class="btn-verde">Imprimir</button>
+        <button type="submit" class="btn-roxo" href="EditarCertificado.html">Editar</button>
+        <iframe id="pdfIframe" style="display:none;"></iframe>
+        <button type="button" onclick="window.open('Certificado Teste.pdf')" class="btn-roxo">Exibir</button>
+        <button type="submit" class="btn-secondary">Excluir</button>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
+
 </html>
