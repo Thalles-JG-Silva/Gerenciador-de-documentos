@@ -93,7 +93,7 @@ function Savecertificado(event){
     alert( "Salvo com sucesso!")
 }
 //  Mensagem de Cadastro de um certificado//
-function cadastrarertificado(event){
+  function cadastrarcertificado(event){
     alert( "Cadastrado bem sucedido!")
 }
     //  Mensagem de restaurar de um certificado//
