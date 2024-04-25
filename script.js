@@ -69,3 +69,35 @@ function openCertificate() {
     var windowFeatures = 'width=800,height=600,resizable=yes,scrollbars=yes,status=yes'; // Características da janela pop-up
     window.open(url, '_blank', windowFeatures); // Abre o PDF em uma nova janela com as características especificadas
 }
+/* Função para excluir um certificado */
+function excluirCertificado(event) {
+    // Esta função é chamada quando o usuário clica no botão de exclusão de um certificado
+  
+    // Exibe uma caixa de diálogo de confirmação
+    if (confirm("Tem certeza de que deseja excluir este certificado?")) {
+        // Obtém a referência à célula da tabela que contém o botão de exclusão
+        var tableCell = event.target.closest("td");
+        
+        // Obtém a referência à linha da tabela que contém o certificado a ser excluído
+        var tableRow = tableCell.closest("tr");
+        
+        // Remove a linha da tabela
+        tableRow.remove();
+        
+        // Exibe uma mensagem de confirmação
+        alert("Certificado excluído com sucesso!");
+    }
+  }
+///  Mensagem de Salvar  um certificado//
+function Savecertificado(event){
+    alert( "Salvo com sucesso!")
+}
+//  Mensagem de Cadastro de um certificado//
+function cadastrarertificado(event){
+    alert( "Cadastrado bem sucedido!")
+}
+    //  Mensagem de restaurar de um certificado//
+    function restaurarcertificado(event){
+        alert( "Restaurado com sucesso!")
+}
+
