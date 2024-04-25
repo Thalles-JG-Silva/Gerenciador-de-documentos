@@ -8,7 +8,7 @@
 }
 
 body {
-	background: linear-gradient(90deg, #C7C5F4, #776BCC);
+	background: linear-gradient(30deg, #31303f,  #11c1ec);
 }
 
 /* Estilização básica para as tabelas com hover */
@@ -63,9 +63,9 @@ body {
 	justify-content: center;
 	min-height: 100vh;
 }
-
+/* Estilo para o background do box login*/
 .screen {		
-	background: linear-gradient(90deg, #4b4388,  #64B7CC);		
+	background: linear-gradient(90deg, #373641,  #11c1ec);		
 	position: relative;	
 	height: 600px;
 	width: 360px;	
@@ -164,7 +164,7 @@ body {
 	outline: none;
 	border-bottom-color: #6A679E;
 }
-
+/* Estilização do Botão Entrar*/
 .login__submit {
 	background: #fff;
 	font-size: 14px;
@@ -182,7 +182,7 @@ body {
 	cursor: pointer;
 	transition: .2s;
 }
-
+/*Estilização do Botão Cadastrar */
 .cadastrar {
 	background: #fff;
 	font-size: 14px;
@@ -273,57 +273,57 @@ body {
     margin-bottom: 25px;
     padding: 10px 20px;
 }
-
-.registration-form .btn-vermelho{
+/* Estilização de Botões*/
+.registration-form .btn-vermelho{/* excluir*/
     border-radius: 30px;
     padding: 10px 20px;
     font-size: 18px;
     font-weight: bold;
-    background-color: #d87171;
+    background-color:#B3093F;
     border: none;
     color: white;
     margin-top: 20px;
 }
 
-.registration-form .btn-amarelo{
+.registration-form .btn-amarelo{/* exibir*/
     border-radius: 30px;
     padding: 10px 20px;
     font-size: 18px;
     font-weight: bold;
-    background-color: #cab70c;
+    background-color: #2196F3;
     border: none;
     color: white;
     margin-top: 20px;
 }
 
-.registration-form .btn-verde{
+.registration-form .btn-verde{/* imprimir*/
     border-radius: 30px;
     padding: 10px 20px;
     font-size: 18px;
     font-weight: bold;
-    background-color: #6c9e67;
+    background-color: #A5BEFA;
     border: none;
     color: white;
     margin-top: 20px;
 }
 
-.registration-form .btn-roxo{
+.registration-form .btn-roxo{/* editar*/
     border-radius: 30px;
     padding: 10px 20px;
     font-size: 18px;
     font-weight: bold;
-    background-color: #c04aa3;
+    background-color: #64B7CC;
     border: none;
     color: white;
     margin-top: 20px;
 }
 
-.registration-form .create-account{
+.registration-form .create-account{/* salvar e cadastrar*/
     border-radius: 30px;
     padding: 10px 20px;
     font-size: 18px;
     font-weight: bold;
-    background-color: #6A679E;
+    background-color: #FF3877;
     border: none;
     color: white;
     margin-top: 20px;
