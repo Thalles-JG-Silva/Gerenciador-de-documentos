@@ -337,7 +337,7 @@ body {
     text-align: center;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    color: #9fadca;
+    color: #a7bde9;
     border-top: 1px solid #dee9ff;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
 }
@@ -345,11 +345,11 @@ body {
 /* Aumentar a fonte dos links na barra de navegação */
 .nav-link {
     font-size: 25px; /* Escolha o tamanho que preferir */
-    font-weight: bold; /* Opcional: torna o texto mais grosso */
+	font-weight: bold; /* Opcional: torna o texto mais grosso */
 }
 
 /* Personalizar a cor de fundo da barra de navegação */
 .navbar-custom {
-    background-color: #4b6fff; /* Substitua pelo código hexadecimal da sua cor */
+    background-color: #D4D3E8; /* Substitua pelo código hexadecimal da sua cor */
 }
 
