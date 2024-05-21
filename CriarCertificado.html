@@ -51,10 +51,19 @@
                 <input type="text" class="form-control item" id="titulo" name="titulo" placeholder="Título do Certificado" required>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control item" id="descricao" name="descricao" placeholder="Descrição" required>
+                <select class="form-control item" id="tipo" name="tipo">
+                    <option value="palestra">Palestra</option>
+                    <option value="mini-curso">Mini-curso</option>
+                    <option value="workshop">Workshop</option>
+                    <option value="seminario">Seminário</option>
+                    <option value="treinamento">Treinamento</option>
+                    <option value="oficina">Oficina</option>
+                    <option value="webinar">Webinar</option>
+                    <option value="curso">Curso</option>
+                </select>
             </div>
             <div class="form-group">
-                <input type="number" class="form-control item" id="horas" name="horas" placeholder="Quantidade de Horas" required>
+                <input type="number" class="form-control item" id="horas" name="horas" placeholder="Carga horaria de Horas" required>
             </div>
             <div class="form-group">
                 <input type="date" class="form-control item" id="data" name="data" required>
@@ -63,14 +72,11 @@
                 <input type="text" class="form-control item" id="participante" name="participante" placeholder="Nome do Participante" required>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control item" id="cpf" name="cpf" required oninput="mascaraCPF()" placeholder="CPF">
-            </div>
-            <div class="form-group">
                 <select class="form-control item" id="tipo" name="tipo">
                     <option value="participou">Participou</option>
                     <option value="ministrou">Ministrou</option>
                 </select>
-            </div>
+            </div>            
 
             <!-- Botões de ações -->
 
