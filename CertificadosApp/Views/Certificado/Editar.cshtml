@@ -1,0 +1,48 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Editar Certificado";
+}
+
+<main class="registration-form mx-auto">
+    <h1 class="text-center text-white">Editar Certificado</h1>
+    <form id="certificadoForm" class="registration-form" asp-action="Editar" asp-controller="Certificado" method="post">
+        <div class="form-group">
+            <input type="text" class="form-control item" id="titulo" name="Titulo" placeholder="Título do Certificado" required value="Título existente">
+        </div>
+        <div class="form-group">
+            <select class="form-control item" id="tipo" name="Tipo">
+                <option value="palestra">Palestra</option>
+                <option value="mini-curso">Mini-curso</option>
+                <option value="workshop">Workshop</option>
+                <option value="seminario">Seminário</option>
+                <option value="treinamento">Treinamento</option>
+                <option value="oficina">Oficina</option>
+                <option value="webinar">Webinar</option>
+                <option value="curso">Curso</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="number" class="form-control item" id="horas" name="Horas" placeholder="Carga horária em horas" required value="100">
+        </div>
+        <div class="form-group">
+            <input type="date" class="form-control item" id="data" name="Data" required value="2024-04-07">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control item" id="participante" name="Participante" placeholder="Nome do Participante" required value="Nome do Participante">
+        </div>
+        <div class="form-group">
+            <select class="form-control item" id="participacao" name="Participacao">
+                <option value="participou">Participou</option>
+                <option value="ministrou">Ministrou</option>
+            </select>
+        </div>
+
+        <!-- Botões de ações -->
+        <div class="form-group">
+            <button type="submit" class="btn btn-block create-account">Salvar Alterações</button>
+            <button type="button" class="btn btn-roxo" onclick="window.location.href='@Url.Action("PaginaPrincipal", "Home")'">Voltar</button>
+            <button type="reset" class="btn btn-amarelo">Limpar</button>
+        </div>
+    </form>
+</main>
+<script src="~/js/site.js"></script>

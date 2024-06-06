@@ -1,0 +1,62 @@
+@{
+    ViewBag.Title = "Cadastro";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewBag.Title</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <!-- Link para a folha de estilos do Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Link para a folha de estilos específica da página de cadastro -->
+    <link rel="stylesheet" href="~/css/site.css">
+</head>
+<body>
+    <!-- Container para o formulário de cadastro -->
+    <div class="registration-form">
+        <!-- Início do formulário de cadastro -->
+        <form asp-action="Register" asp-controller="Account" method="post">
+            <!-- Ícone representativo para o usuário -->
+            <div class="form-icon">
+                <span><i class="icon icon-user"></i></span>
+            </div>
+            <!-- Grupo de formulário para entrada do nome -->
+            <div class="form-group">
+                <input type="text" class="form-control item" id="nome" name="Nome" placeholder="Nome" required>
+            </div>
+            <!-- Grupo de formulário para entrada do nome de usuário -->
+            <div class="form-group">
+                <input type="text" class="form-control item" id="nomeusuario" name="NomeUsuario" placeholder="Nome do Usuario (a)" required>
+            </div>
+            <!-- Grupo de formulário para entrada do email -->
+            <div class="form-group">
+                <input type="email" class="form-control item" id="email" name="Email" placeholder="Email" required>
+            </div>
+            <!-- Grupo de formulário para entrada da senha -->
+            <div class="form-group">
+                <input type="password" class="form-control item" id="senha" name="Senha" placeholder="Senha" required>
+            </div>
+            <!-- Grupo de formulário para confirmação da senha -->
+            <div class="form-group">
+                <input type="password" class="form-control item" id="confirmarsenha" name="ConfirmarSenha" placeholder="Confirmar Senha" required>
+            </div>
+            <!-- Botões do formulário -->
+            <div class="form-group">
+                <!-- Botão para submeter o formulário de cadastro -->
+                <button type="submit" class="btn btn-block create-account">Cadastrar</button>
+                <!-- Botão para voltar à página de login -->
+                <button type="button" class="btn btn-roxo" onclick="window.location='@Url.Action("Login", "Account")'">Voltar</button>
+            </div>
+        </form>
+    </div>
+    <!-- Scripts JavaScript para funcionalidades adicionais, como validação -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <!-- Script personalizado para a página -->
+    <script src="~/js/site.js"></script>
+</body>
+</html>

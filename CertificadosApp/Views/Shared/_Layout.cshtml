@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - CertificadosApp</title>
+    <link rel="stylesheet" href="~/css/site.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="~/img/logo.png" alt="Logo" height="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Home" asp-action="PaginaPrincipal">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Certificado" asp-action="Criar">Criar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Home" asp-action="Contato">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Home" asp-action="Lixeira">Lixeira</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Account" asp-action="Login">Sair</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - CertificadosApp
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+@{
+    ViewBag.Title = "Login";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/site.css">
+    <title>@ViewBag.Title</title>
+</head>
+
+<body>
+    <!-- Container para centralizar a tela de login -->
+    <div class="container">
+        <div class="screen">
+            <!-- Conteúdo do login incluindo campos de entrada e botões -->
+            <div class="screen__content">
+                <form class="login" method="post" action="@Url.Action("Login", "Account")">
+                    <!-- Campo de usuário/email -->
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input type="text" name="Username" class="login__input" placeholder="Usuario(a) / Email" required>
+                    </div>
+                    <!-- Campo de senha -->
+                    <div class="login__field">
+                        <i class="login__icon fas fa-lock"></i>
+                        <input type="password" name="Password" class="login__input" placeholder="Senha" required>
+                    </div>
+                    <!-- Botão de entrar utilizando tag <button> -->
+                    <button type="submit" class="button login__submit">
+                        <span class="button__text">Entrar</span>
+                        <i class="button__icon fas fa-chevron-right"></i>
+                    </button>
+                </form>
+                <!-- Área para registro -->
+                <div class="social-login">
+                    <!-- Botão de cadastro utilizando tag <button> -->
+                    <button type="button" onclick="window.location.href='@Url.Action("Register", "Account")'" class="button cadastrar">
+                        <span class="button__text">Cadastrar</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Plano de fundo decorativo -->
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+
+</html>
