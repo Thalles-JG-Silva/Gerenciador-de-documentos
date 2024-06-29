@@ -8,23 +8,26 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Jenifer\\.nuget\\packages\\": {},
-    "D:\\FRAMEWORKS\\NuGetPackages": {}
+    "C:\\Users\\Amanda\\.nuget\\packages\\": {},
+    "C:\\Users\\Amanda\\Desktop\\Components\\Offline Packages": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jenifer\\Documents\\GitHub\\Gestao-de-certificados\\CertificadosApp\\CertificadosApp.csproj",
+      "projectUniqueName": "C:\\Users\\Amanda\\Desktop\\Doc.gerenciador\\Gerenciador-de-documentos\\CertificadosApp\\CertificadosApp.csproj",
       "projectName": "CertificadosApp",
-      "projectPath": "C:\\Users\\Jenifer\\Documents\\GitHub\\Gestao-de-certificados\\CertificadosApp\\CertificadosApp.csproj",
-      "packagesPath": "C:\\Users\\Jenifer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jenifer\\Documents\\GitHub\\Gestao-de-certificados\\CertificadosApp\\obj\\",
+      "projectPath": "C:\\Users\\Amanda\\Desktop\\Doc.gerenciador\\Gerenciador-de-documentos\\CertificadosApp\\CertificadosApp.csproj",
+      "packagesPath": "C:\\Users\\Amanda\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Amanda\\Desktop\\Doc.gerenciador\\Gerenciador-de-documentos\\CertificadosApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\FRAMEWORKS\\NuGetPackages"
+        "C:\\Users\\Amanda\\Desktop\\Components\\Offline Packages",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Jenifer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Amanda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -34,6 +37,8 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+        "C:\\Users\\Amanda\\Desktop\\Components\\System\\Components\\Packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -46,11 +51,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -67,15 +67,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
-          "Microsoft.NETCore.App": {
-            "privateAssets": "all"
-          }
-        },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }
