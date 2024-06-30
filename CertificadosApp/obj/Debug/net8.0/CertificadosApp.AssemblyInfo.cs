@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CertificadosApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b8894c0616877240caf6a03dcfd3268d6b23d61")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c7c9d9498e433cfd2cdfd097b40259ebbb7b03c")]
 [assembly: System.Reflection.AssemblyProductAttribute("CertificadosApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CertificadosApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
