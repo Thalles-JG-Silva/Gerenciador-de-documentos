@@ -22,7 +22,7 @@
                     <!-- Campo de usuário/email -->
                     <div class="login__field">
                         <i class="login__icon fas fa-user"></i>
-                        <input type="text" name="Username" class="login__input" placeholder="Usuario(a) / Email" required>
+                        <input type="text" name="Username" class="login__input" placeholder="Usuário(a) / Email" required>
                     </div>
                     <!-- Campo de senha -->
                     <div class="login__field">
@@ -30,7 +30,7 @@
                         <input type="password" name="Password" class="login__input" placeholder="Senha" required>
                     </div>
                     <!-- Botão de entrar utilizando tag <button> -->
-                    <button type="submit" class="button login__submit">
+                    <button type="submit" onclick="window.location.href='@Url.Action("PaginaPrincipal", "Account")'" class="button login__submit">
                         <span class="button__text">Entrar</span>
                         <i class="button__icon fas fa-chevron-right"></i>
                     </button>

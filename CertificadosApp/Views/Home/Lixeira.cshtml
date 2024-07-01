@@ -1,3 +1,5 @@
+@model IEnumerable<CertificadosApp.Models.Certificado>
+
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.Title = "Lixeira";
@@ -12,7 +14,7 @@
                 <div class="search-bar">
                     <input type="text" id="searchInput" onkeyup="searchCertificates()" placeholder="Pesquisar certificados...">
                 </div>
-                <!-- tabela de cerificados -->
+                <!-- tabela de certificados -->
                 <tr>
                     <th scope="col"><input type="checkbox" id="selectAll" onclick="toggleAll(this)"> Selecionar Todos</th>
                     <th scope="col">Título</th>
@@ -21,63 +23,24 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td><input type="checkbox" name="selectedCert" value="cert1"></td>
-                    <td>Palestra de Tecnologia</td>
-                    <td>2024-04-15</td>
-                    <td>João Silva</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" name="selectedCert" value="cert2"></td>
-                    <td>Workshop de Machine Learning</td>
-                    <td>2024-05-01</td>
-                    <td>Beatriz Almeida</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" name="selectedCert" value="cert3"></td>
-                    <td>Conferência de Design UX</td>
-                    <td>2024-06-12</td>
-                    <td>Rafael Costa</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" name="selectedCert" value="cert4"></td>
-                    <td>Simpósio de Sustentabilidade</td>
-                    <td>2024-07-20</td>
-                    <td>Larissa Gonçalves</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" name="selectedCert" value="cert5"></td>
-                    <td>Curso de Desenvolvimento Web</td>
-                    <td>2024-08-05</td>
-                    <td>Carlos Magno</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" name="selectedCert" value="cert6"></td>
-                    <td>Fórum de Inovação Tecnológica</td>
-                    <td>2024-09-15</td>
-                    <td>Juliana Martins</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" name="selectedCert" value="cert7"></td>
-                    <td>Debate sobre Educação a Distância</td>
-                    <td>2024-10-22</td>
-                    <td>Marcos Oliveira</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" name="selectedCert" value="cert8"></td>
-                    <td>Exposição de Arte Digital</td>
-                    <td>2024-11-03</td>
-                    <td>Sofia Castro</td>
-                </tr>
+                @foreach (var cert in Model)
+                {
+                    <tr>
+                        <td><input type="checkbox" name="selectedCert" value="@cert.CertificadoID"></td>
+                        <td>@cert.Titulo</td>
+                        <td>@cert.Data.ToString("yyyy-MM-dd")</td>
+                        <td>@cert.Participante</td>
+                    </tr>
+                }
             </tbody>
         </table>
     </div>
 
     <!-- Botões de ações -->
     <div class="text-center mt-4">
-        <button type="button" class="btn btn-verde" onclick="restaurarcertificado()">Restaurar</button>
-        <button type="button" class="btn btn-roxo" onclick="window.location.href='@Url.Action("PaginaPrincipal", "Home")'">Voltar</button>
-        <button type="button" class="btn btn-vermelho" onclick="excluirCertificado()">Excluir Permanentemente</button>
+        <button type="button" class="btn btn-verde" onclick="restaurarCertificados()">Restaurar</button>
+        <button type="button" class="btn btn-roxo" onclick="window.location.href='@Url.Action("Index", "Home")'">Voltar</button>
+        <button type="button" class="btn btn-vermelho" onclick="excluirCertificados()">Excluir Permanentemente</button>
     </div>
 </main>
 <script src="~/js/site.js"></script>

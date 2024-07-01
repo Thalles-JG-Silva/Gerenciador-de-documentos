@@ -1,4 +1,109 @@
-﻿/**
+﻿function searchCertificates() {
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("searchInput");
+    filter = input.value.toUpperCase();
+    table = document.querySelector("table");
+    tr = table.getElementsByTagName("tr");
+
+    for (i = 1; i < tr.length; i++) {
+        tr[i].style.display = "none";
+        td = tr[i].getElementsByTagName("td");
+        for (var j = 0; j < td.length; j++) {
+            if (td[j]) {
+                txtValue = td[j].textContent || td[j].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                    break;
+                }
+            }
+        }
+    }
+}
+
+function toggleAll(source) {
+    checkboxes = document.getElementsByName('selectedCert');
+    for (var i = 0, n = checkboxes.length; i < n; i++) {
+        checkboxes[i].checked = source.checked;
+    }
+}
+
+function restaurarCertificados() {
+    var selected = [];
+    $('input[name="selectedCert"]:checked').each(function() {
+        selected.push($(this).val());
+    });
+
+    if (selected.length > 0) {
+        $.post('@Url.Action("Restaurar", "Lixeira")', { ids: selected }, function() {
+            location.reload();
+        });
+    } else {
+        alert("Selecione pelo menos um certificado para restaurar.");
+    }
+}
+
+function excluirCertificados() {
+    var selected = [];
+    $('input[name="selectedCert"]:checked').each(function() {
+        selected.push($(this).val());
+    });
+
+    if (selected.length > 0) {
+        if (confirm("Tem certeza que deseja excluir permanentemente os certificados selecionados?")) {
+            $.post('@Url.Action("ExcluirPermanentemente", "Lixeira")', { ids: selected }, function() {
+                location.reload();
+            });
+        }
+    } else {
+        alert("Selecione pelo menos um certificado para excluir.");
+    }
+}
+
+
+function searchCertificates() {
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("searchInput");
+    filter = input.value.toUpperCase();
+    table = document.querySelector("table");
+    tr = table.getElementsByTagName("tr");
+
+    for (i = 1; i < tr.length; i++) {
+        tr[i].style.display = "none";
+        td = tr[i].getElementsByTagName("td");
+        for (var j = 0; j < td.length; j++) {
+            if (td[j]) {
+                txtValue = td[j].textContent || td[j].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                    break;
+                }
+            }
+        }
+    }
+}
+
+function toggleAll(source) {
+    checkboxes = document.getElementsByName('selectedCert');
+    for(var i=0, n=checkboxes.length;i<n;i++) {
+        checkboxes[i].checked = source.checked;
+    }
+}
+
+function imprimirPDF(fileName) {
+    // Lógica para impressão de PDF
+}
+
+function openCertificate() {
+    // Lógica para exibir certificado
+}
+
+function excluirCertificado() {
+    // Lógica para excluir certificado
+}
+
+
+
+/**
  * Filtra os certificados na tabela com base no texto inserido pelo usuário no campo de pesquisa.
  */
 function searchCertificates() {

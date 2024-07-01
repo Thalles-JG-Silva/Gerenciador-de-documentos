@@ -1,3 +1,5 @@
+@model CertificadosApp.Models.UsuarioViewModel
+
 @{
     ViewBag.Title = "Cadastro";
 }
@@ -26,23 +28,28 @@
             </div>
             <!-- Grupo de formulário para entrada do nome -->
             <div class="form-group">
-                <input type="text" class="form-control item" id="nome" name="Nome" placeholder="Nome" required>
+                <input type="text" class="form-control item" asp-for="Nome" placeholder="Nome" required>
+                <span asp-validation-for="Nome" class="text-danger"></span>
             </div>
             <!-- Grupo de formulário para entrada do nome de usuário -->
             <div class="form-group">
-                <input type="text" class="form-control item" id="nomeusuario" name="NomeUsuario" placeholder="Nome do Usuario (a)" required>
+                <input type="text" class="form-control item" asp-for="NomeUsuario" placeholder="Nome do Usuário(a)" required>
+                <span asp-validation-for="NomeUsuario" class="text-danger"></span>
             </div>
             <!-- Grupo de formulário para entrada do email -->
             <div class="form-group">
-                <input type="email" class="form-control item" id="email" name="Email" placeholder="Email" required>
+                <input type="email" class="form-control item" asp-for="Email" placeholder="Email" required>
+                <span asp-validation-for="Email" class="text-danger"></span>
             </div>
             <!-- Grupo de formulário para entrada da senha -->
             <div class="form-group">
-                <input type="password" class="form-control item" id="senha" name="Senha" placeholder="Senha" required>
+                <input type="password" class="form-control item" asp-for="Senha" placeholder="Senha" required>
+                <span asp-validation-for="Senha" class="text-danger"></span>
             </div>
             <!-- Grupo de formulário para confirmação da senha -->
             <div class="form-group">
-                <input type="password" class="form-control item" id="confirmarsenha" name="ConfirmarSenha" placeholder="Confirmar Senha" required>
+                <input type="password" class="form-control item" asp-for="ConfirmarSenha" placeholder="Confirmar Senha" required>
+                <span asp-validation-for="ConfirmarSenha" class="text-danger"></span>
             </div>
             <!-- Botões do formulário -->
             <div class="form-group">
