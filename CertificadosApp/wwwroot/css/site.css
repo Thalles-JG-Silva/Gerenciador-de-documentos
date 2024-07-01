@@ -8,12 +8,12 @@
 }
 
 body {
-	background: linear-gradient(90deg, #31303f,  #11c1ec);
+	background: linear-gradient(90deg, #f5f4f7,  #fafafa);
 }
 
 /* Estilização básica para as tabelas com hover */
 .table-hover {
-    background-color: #fff; /* Cor de fundo */
+    background-color: rgb(163, 29, 29); /* Cor de fundo */
     border-radius: 20px; /* Bordas arredondadas */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
     margin-top: 20px; /* Espaço acima da tabela */
@@ -59,12 +59,21 @@ body {
     cursor: pointer; /* Indica interatividade */
 }
 
-.container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-height: 100vh;
+/* Estilos para o Rodapé */
+.footer {
+    background-color: #d9f7ff; /* Cor de fundo do rodapé */
+    color: #ffffff; /* Cor do texto do rodapé */
+    padding: 10px 0; /* Espaçamento no rodapé */
+    width: -500; /* Garantir que o rodapé ocupe toda a largura da página */
+    bottom: 0; /* Alinhar o rodapé na parte inferior */
+    text-align: center; /* Centralizar o texto no rodapé */
 }
+.footer-content p {
+    margin: 0; /* Remover margens do parágrafo */
+    font-size: 14px; /* Tamanho de fonte para o texto do rodapé */
+}
+/* Estilos para o Rodapé */
+
 /* Estilo para o background do box login*/
 .screen {		
 	background: linear-gradient(90deg, #373641,  #11c1ec);		
@@ -283,9 +292,9 @@ body {
     padding: 10px 20px;
     font-size: 18px;
     font-weight: bold;
-    background-color:#B3093F;
+    background-color:#f0f7fa;
     border: none;
-    color: white;
+    color: rgb(228, 13, 13);
     margin-top: 20px;
 }
 
@@ -294,9 +303,9 @@ body {
     padding: 10px 20px;
     font-size: 18px;
     font-weight: bold;
-    background-color: #2196F3;
+    background-color: #eef4f8;
     border: none;
-    color: white;
+    color: rgb(11, 19, 145);
     margin-top: 20px;
 }
 
@@ -305,9 +314,9 @@ body {
     padding: 10px 20px;
     font-size: 18px;
     font-weight: bold;
-    background-color: #A5BEFA;
+    background-color: #f8faff;
     border: none;
-    color: white;
+    color: rgb(252, 228, 17);
     margin-top: 20px;
 }
 
@@ -316,9 +325,9 @@ body {
     padding: 10px 20px;
     font-size: 18px;
     font-weight: bold;
-    background-color: #64B7CC;
+    background-color: #f5f5f5;
     border: none;
-    color: white;
+    color: rgb(54, 236, 9);
     margin-top: 20px;
 }
 /* Estilos para botões de formulário de registro */
@@ -348,12 +357,12 @@ body {
 
 /* Aumentar a fonte dos links na barra de navegação */
 .nav-link {
-    font-size: 25px; /* Escolha o tamanho que preferir */
+    font-size: px; /* Escolha o tamanho que preferir */
     font-weight: bold; /* Opcional: torna o texto mais grosso */
 }
 
 /* Personalizar a cor de fundo da barra de navegação */
 .navbar-custom {
-    background-color:  #212944ad; /* Substitua pelo código hexadecimal da sua cor */
+    background-color:  #25274d; /* Substitua pelo código hexadecimal da sua cor */
 }
 
