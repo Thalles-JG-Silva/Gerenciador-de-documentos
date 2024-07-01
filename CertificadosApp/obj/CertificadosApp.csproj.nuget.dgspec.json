@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\thall\\Desktop\\Projetos\\Gestao-de-certificados\\CertificadosApp\\CertificadosApp.csproj": {}
   },
   "projects": {
@@ -15,11 +16,36 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\thall\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+    "C:\\Users\\Fabiola\\Desktop\\PROG 3\\Gestao-de-certificados-4\\CertificadosApp\\CertificadosApp.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Fabiola\\Desktop\\PROG 3\\Gestao-de-certificados-4\\CertificadosApp\\CertificadosApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Fabiola\\Desktop\\PROG 3\\Gestao-de-certificados-4\\CertificadosApp\\CertificadosApp.csproj",
+        "projectName": "CertificadosApp",
+        "projectPath": "C:\\Users\\Fabiola\\Desktop\\PROG 3\\Gestao-de-certificados-4\\CertificadosApp\\CertificadosApp.csproj",
+        "packagesPath": "C:\\Users\\Fabiola\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Fabiola\\Desktop\\PROG 3\\Gestao-de-certificados-4\\CertificadosApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Fabiola\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+>>>>>>> 98c9e920388ef8d31a6d867c05a842c7de058565
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+<<<<<<< HEAD
+=======
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+>>>>>>> 98c9e920388ef8d31a6d867c05a842c7de058565
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

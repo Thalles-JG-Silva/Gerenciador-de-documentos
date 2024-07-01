@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "Ef22qd3bKSY=",
   "success": true,
   "projectFilePath": "C:\\Users\\thall\\Desktop\\Projetos\\Gestao-de-certificados\\CertificadosApp\\CertificadosApp.csproj",
@@ -81,5 +82,11 @@
     "C:\\Users\\thall\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\thall\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
+=======
+  "dgSpecHash": "Bo2Q9CRgTc8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Fabiola\\Desktop\\PROG 3\\Gestao-de-certificados-4\\CertificadosApp\\CertificadosApp.csproj",
+  "expectedPackageFiles": [],
+>>>>>>> 98c9e920388ef8d31a6d867c05a842c7de058565
   "logs": []
 }
