@@ -56,3 +56,32 @@ C:\Users\Jenifer\Documents\GitHub\Gestao-de-certificados\CertificadosApp\obj\Deb
 C:\Users\Jenifer\Documents\GitHub\Gestao-de-certificados\CertificadosApp\obj\Debug\net8.0\CertificadosApp.pdb
 C:\Users\Jenifer\Documents\GitHub\Gestao-de-certificados\CertificadosApp\obj\Debug\net8.0\CertificadosApp.genruntimeconfig.cache
 C:\Users\Jenifer\Documents\GitHub\Gestao-de-certificados\CertificadosApp\obj\Debug\net8.0\ref\CertificadosApp.dll
+C:\Users\Fabiola\Desktop\PROG 3\Gestao-de-certificados-4\CertificadosApp\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Fabiola\Desktop\PROG 3\Gestao-de-certificados-4\CertificadosApp\bin\Debug\net8.0\appsettings.json
+C:\Users\Fabiola\Desktop\PROG 3\Gestao-de-certificados-4\CertificadosApp\bin\Debug\net8.0\CertificadosApp.staticwebassets.runtime.json
+C:\Users\Fabiola\Desktop\PROG 3\Gestao-de-certificados-4\CertificadosApp\bin\Debug\net8.0\CertificadosApp.exe
+C:\Users\Fabiola\Desktop\PROG 3\Gestao-de-certificados-4\CertificadosApp\bin\Debug\net8.0\CertificadosApp.deps.json
+C:\Users\Fabiola\Desktop\PROG 3\Gestao-de-certificados-4\CertificadosApp\bin\Debug\net8.0\CertificadosApp.runtimeconfig.json
+C:\Users\Fabiola\Desktop\PROG 3\Gestao-de-certificados-4\CertificadosApp\bin\Debug\net8.0\CertificadosApp.dll
+C:\Users\Fabiola\Desktop\PROG 3\Gestao-de-certificados-4\CertificadosApp\bin\Debug\net8.0\CertificadosApp.pdb
+C:\Users\Fabiola\Desktop\PROG 3\Gestao-de-certificados-4\CertificadosApp\obj\Debug\net8.0\CertificadosApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fabiola\Desktop\PROG 3\Gestao-de-certificados-4\CertificadosApp\obj\Debug\net8.0\CertificadosApp.AssemblyInfoInputs.cache
+C:\Users\Fabiola\Desktop\PROG 3\Gestao-de-certificados-4\CertificadosApp\obj\Debug\net8.0\CertificadosApp.AssemblyInfo.cs
+C:\Users\Fabiola\Desktop\PROG 3\Gestao-de-certificados-4\CertificadosApp\obj\Debug\net8.0\CertificadosApp.csproj.CoreCompileInputs.cache
+C:\Users\Fabiola\Desktop\PROG 3\Gestao-de-certificados-4\CertificadosApp\obj\Debug\net8.0\CertificadosApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Fabiola\Desktop\PROG 3\Gestao-de-certificados-4\CertificadosApp\obj\Debug\net8.0\CertificadosApp.RazorAssemblyInfo.cache
+C:\Users\Fabiola\Desktop\PROG 3\Gestao-de-certificados-4\CertificadosApp\obj\Debug\net8.0\CertificadosApp.RazorAssemblyInfo.cs
+C:\Users\Fabiola\Desktop\PROG 3\Gestao-de-certificados-4\CertificadosApp\obj\Debug\net8.0\CertificadosApp.sourcelink.json
+C:\Users\Fabiola\Desktop\PROG 3\Gestao-de-certificados-4\CertificadosApp\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Fabiola\Desktop\PROG 3\Gestao-de-certificados-4\CertificadosApp\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Fabiola\Desktop\PROG 3\Gestao-de-certificados-4\CertificadosApp\obj\Debug\net8.0\staticwebassets\msbuild.CertificadosApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Fabiola\Desktop\PROG 3\Gestao-de-certificados-4\CertificadosApp\obj\Debug\net8.0\staticwebassets\msbuild.build.CertificadosApp.props
+C:\Users\Fabiola\Desktop\PROG 3\Gestao-de-certificados-4\CertificadosApp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.CertificadosApp.props
+C:\Users\Fabiola\Desktop\PROG 3\Gestao-de-certificados-4\CertificadosApp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.CertificadosApp.props
+C:\Users\Fabiola\Desktop\PROG 3\Gestao-de-certificados-4\CertificadosApp\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Fabiola\Desktop\PROG 3\Gestao-de-certificados-4\CertificadosApp\obj\Debug\net8.0\scopedcss\bundle\CertificadosApp.styles.css
+C:\Users\Fabiola\Desktop\PROG 3\Gestao-de-certificados-4\CertificadosApp\obj\Debug\net8.0\CertificadosApp.dll
+C:\Users\Fabiola\Desktop\PROG 3\Gestao-de-certificados-4\CertificadosApp\obj\Debug\net8.0\refint\CertificadosApp.dll
+C:\Users\Fabiola\Desktop\PROG 3\Gestao-de-certificados-4\CertificadosApp\obj\Debug\net8.0\CertificadosApp.pdb
+C:\Users\Fabiola\Desktop\PROG 3\Gestao-de-certificados-4\CertificadosApp\obj\Debug\net8.0\CertificadosApp.genruntimeconfig.cache
+C:\Users\Fabiola\Desktop\PROG 3\Gestao-de-certificados-4\CertificadosApp\obj\Debug\net8.0\ref\CertificadosApp.dll

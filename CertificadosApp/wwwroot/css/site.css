@@ -34,15 +34,17 @@ body {
 }
 
 /* Estilo para os cabeçalhos de tabela */
-.table th {
+.table-hover th {
     cursor: pointer; /* Indica que o cabeçalho é interativo */
-    background-color: #EFEFEF; /* Cor de fundo sutil para cabeçalhos */
+    background-color: #fff; /* Cor de fundo branca para cabeçalhos */
     padding: 12px 15px; /* Padding generoso para um visual agradável */
+    border-bottom: 1px solid #DDD; /* Borda sutil para separar o cabeçalho do corpo da tabela */
 }
 
 /* Estilo para as células da tabela */
-.table td {
+.table-hover td {
     padding: 12px 15px; /* Padding uniforme */
+    background-color: #fff; /* Cor de fundo branca para células */
     border-bottom: 1px solid #DDD; /* Borda sutil para separar linhas */
 }
 
